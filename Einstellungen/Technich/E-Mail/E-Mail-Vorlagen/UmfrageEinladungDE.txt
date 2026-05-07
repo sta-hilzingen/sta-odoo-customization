@@ -8,8 +8,9 @@
             Wir führen eine Umfrage durch und würden uns über Ihre Antwort freuen.
         </t>
         <t t-if="object.survey_id.users_login_required">
-            <br/>Für die Anmeldung benutze die Anmeldedaten von deinem Active Directory Account (PC Login).<br/>
+            <br/>Für die Anmeldung benutze die Anmeldedaten von deinem Active Directory Account (PC Login; achte auf Groß- und Kleinschreibung).<br/>
         </t>
+        <p>Der Link funktioniert nur im Netzwerk von STA.</p>
         </p><div style="margin: 16px 0px 16px 0px;">
             <a t-att-href="(object.get_start_url())" style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
                 <t t-if="object.survey_id.certification">
